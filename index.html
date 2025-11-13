@@ -25,26 +25,43 @@
 
   <div class="wrapperallesss">
 
-    <div class="image-container">
-      <img src="cuisson.jpeg" alt="Tierheim Schmusitierchen">
-
-      <p class="cuisson"> 
-        Cuisson könnte man leicht mit einem Kissen verwechseln!
-      </p>
+     <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="cuisson.jpeg" alt="Tierheim Schmusitierchen">
+        </div>
+        <div class="card-back">
+          <p class="card-text">
+            Cuisson könnte man leicht mit einem Kissen verwechseln! Wenn sie sich einrollt, duftet sie angeblich nach frisch gebackenem Brot, weil sie heimlich nachts in der Küche schläft und dort die Wärme liebt. Ihr größter Traum ist es, einmal Chefpatissière in einem Katzencafé zu werden.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="zweiterblablabla">
-      <img src="grumpy.jpeg" alt="Tierheim Schmusitierchen">
-      <p class="grumpy"> 
-        Grumpy ist gar nicht so verschmust... Aber trotzdem sehr süß!
-      </p>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="grumpy.jpeg" alt="Tierheim Schmusitierchen">
+        </div>
+        <div class="card-back">
+          <p class="card-text">
+            Grumpy ist gar nicht so verschmust... Aber trotzdem sehr süß! Sie sammelt alte Postkarten, auf denen Katzen majestätisch aussehen, um sich täglich daran zu erinnern, dass Muffeligkeit ebenfalls eine Kunstform sein kann. Nur wenn es regnet, sucht sie freiwillig Gesellschaft und erzählt dann Geschichten über ihre Abenteuer als selbst ernannte Wetterfee.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="dritterblablabla">
-      <img src="kiki.jpeg" alt="Tierheim Schmusitierchen">
-      <p class="kiki"> 
-        Kiki liebt Schetterlinge und ist dumm, aber sehr süß!
-      </p>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="kiki.jpeg" alt="Tierheim Schmusitierchen">
+        </div>
+        <div class="card-back">
+          <p class="card-text">
+            Kiki liebt Schmetterlinge und ist dumm, aber sehr süß! Jeden Morgen klebt sie sich eine Papierkrone auf den Kopf, weil sie überzeugt ist, Königin der Gärten zu sein. Ihre größte Heldentat war, einen entlaufenen Hasen wiederzufinden, indem sie ihm ein Lied vorschnurrte, bis er freiwillig zurück in seinen Stall hoppelte.
+          </p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -60,9 +77,17 @@ Mögen sie lustige Tiere? Dann schauen sie diese Videos an!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CkhXkCzd_18?si=zp-T85cYXcNFlumX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
- <p class"sry
+ <p class="sry">
   tut mir leid nono, ich hab dir mit den Videos nachgemacht.
 </p>
+
+<script>
+  document.querySelectorAll('.card').forEach((card) => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-flipped');
+    });
+  });
+</script>
 
 </body>
 
